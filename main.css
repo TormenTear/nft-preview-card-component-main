@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* font-family: 'Outfit', sans-serif; */
+
+:root{
+  --primary-soft-blue-color: hsl(215, 51%, 70%);  
+  --primary-cyan-color: hsl(178, 100%, 50%);
+  --main-bg-color: hsl(217, 54%, 11%);
+  --card-bg-color: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+}
+
+*{
+  font-family: 'Outfit', sans-serif;
+}
+
+
+body{
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--card-bg-color);
+  border-radius: 1em;
+  padding: 1.35em;
+}
+
+.nft-image {
+  position: relative;
+  width: 300px;
+  border-radius: 0.5em;
+}
+
+h2{
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+p{
+  font-size: 18px;
+  color:hsl(215, 51%, 70%);
+  line-height: 1.35em ;
+}
+
+.card-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.sum,
+.time {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.sum{
+  color: var(--primary-cyan-color);
+  font-weight: 600;
+}
+
+.time{
+  color: var(--primary-soft-blue-color);
+}
+
+hr{
+  margin: 1.2em 0;
+  border: none;
+  height: 1px;
+  color: var(--line-color);
+  background-color: var(--line-color);
+}
+
+.credits {
+  display: flex;
+  align-items: center;
+  color: var(--primary-soft-blue-color);
+}
+
+.credits img{
+  width: 2em;
+  margin-right: 1em;
+  border: 1px solid var(--white-color);
+  border-radius: 50%;
+}
+
+a{
+  text-decoration: none;
+  color: var(--white-color);
+  margin-left: 0.25em;
+}
+
+/* Hover section */
+
+.nft-image:hover{
+  color: var(--primary-soft-blue-color);
+}
+
+a:hover{
+  color: var(--primary-soft-blue-color);
+}
+
